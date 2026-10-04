@@ -25,3 +25,7 @@ Agilizar a triagem de mensagens e responder dúvidas com apoio de um documento d
 ## Visualizar o fluxo
 
 [Acessar o cenário compartilhado no Make](https://us2.make.com/public/shared-scenario/BZJTZdqODGO/ari-flow)
+
+## Imagem do fluxo
+
+![Fluxo do ARI Flow no Make](ari-flow.png)
