@@ -29,3 +29,9 @@ Agilizar a triagem de mensagens e responder dúvidas com apoio de um documento d
 ## Imagem do fluxo
 
 ![Fluxo do ARI Flow no Make](ari-flow.png)
+
+## Blueprint
+
+O arquivo [ari-flow.blueprint.json](ari-flow.blueprint.json) contém a estrutura exportada do cenário no Make.
+
+Para reutilizar o fluxo, importe o blueprint no Make e configure novamente as conexões do Gmail, Google Gemini e Google Drive.
