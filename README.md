@@ -14,8 +14,9 @@ A base de demonstração reúne informações sobre criação de sites, automaç
 2. O primeiro módulo Gemini classifica a mensagem.
 3. O router separa dúvidas das demais mensagens.
 4. Para dúvidas, o Google Drive baixa a base de conhecimento e o segundo módulo Gemini prepara a resposta.
-5. O Gmail envia a resposta e organiza a mensagem original com o marcador ARI Flow.
-6. As demais mensagens seguem uma rota separada de movimentação.
+5. O Gmail envia automaticamente a resposta ao remetente.
+6. Após o envio, o fluxo move automaticamente o e-mail original da caixa de entrada para o marcador **ARI Flow**.
+7. As demais mensagens seguem uma rota separada de movimentação.
 
 ## Ferramentas
 
@@ -42,7 +43,7 @@ A resposta confirmou o serviço de análise de dados e dashboards e solicitou in
 
 ### E-mail organizado
 
-A mensagem original aparece no marcador ARI Flow após o atendimento.
+Após enviar a resposta, o fluxo move automaticamente a mensagem original da caixa de entrada para o marcador **ARI Flow**, organizando os e-mails já atendidos.
 
 ![E-mail de teste organizado no marcador ARI Flow do Gmail](email-organizado.png)
 
@@ -61,4 +62,4 @@ A mensagem original aparece no marcador ARI Flow após o atendimento.
 
 O arquivo [ari-flow.blueprint.json](ari-flow.blueprint.json) contém a estrutura exportada do cenário no Make. Para reutilizar o fluxo, importe o blueprint e configure suas próprias conexões do Gmail, Google Gemini e Google Drive, o documento da base de conhecimento, os marcadores e um modelo Gemini disponível na sua conta.
 
-As imagens registram o teste realizado no Make. O blueprint publicado precisa ser conferido com a configuração atual, pois o modelo Gemini foi alterado durante os testes.
+As imagens registram o teste realizado no Make. O blueprint atualizado utiliza o modelo `gemini-3.6-flash` nos dois módulos Gemini. Para importar o cenário, selecione um modelo disponível na sua conta.
